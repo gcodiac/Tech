@@ -1,0 +1,147 @@
+<!-- Ali 2017 -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="Everything Tech" />
+		<meta name="author" content="Ali Albakri" />
+
+		<title>Everything Tech | Welcome</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<div class="page" id="">
+			<header>
+				<div class="container">
+					<!-- Brand -->
+					<h1 id="branding"><span class="highlight">Everything</span>Tech</h1>
+					<!-- navigation items -->
+					<nav>
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">services</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<section id="showcase">
+				<div class="content" id="">
+					<h1>Everything Tech</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus iusto exercitationem delectus temporaomnis!</p>
+					<button class="button_1 bg-primary">Read More</button>
+				</div>
+				<!-- form -->
+				<div id="form">
+					<h2>Sign up Today</h2>
+					<h3>Please fill in the form</h3>
+					<form>
+						<div class="form-group">
+							<label for="">Username</label>
+							<input type="text" placeholder="username" />
+						</div>
+						<div class="form-group">
+							<label for="">Email</label>
+							<input type="text" placeholder="Email" />
+						</div>
+						<div class="form-group">
+							<label for="">Password</label>
+							<input type="text" placeholder="Password" />
+						</div>
+						<button class="button_1">Submit</button>
+					</form>
+				</div>
+			</section>
+
+			<section id="newsletter">
+				<div class="container">
+					<h1>Subscribe</h1>
+					<form action="">
+						<input type="email" placeholder="Enter Your Email" />
+						<button type="submit" class="button_1">Subscribe</button>
+					</form>
+				</div>
+			</section>
+
+			<section id="boxes">
+				<div class="container">
+					<!-- (div.box>h3{lorem}+p{lorem})*3-->
+					<div class="box">
+						<img src="./img/coding, mobile.svg" alt="Programming" width="150" />
+						<h3>Programming</h3>
+						<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+					</div>
+					<div class="box">
+						<img src="./img/security.svg" alt="security" width="150" />
+						<h3>Securiy</h3>
+						<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+					</div>
+					<div class="box">
+						<img src="./img/It.svg" alt="networking" width="150" />
+						<h3>Networking</h3>
+						<p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem</p>
+					</div>
+				</div>
+			</section>
+			<!-------------------- WHO SECTION --------------------->
+			<section id="who">
+				<!------ WHO ASIDE -> IMG ----------->
+				<aside class="bg-img"></aside>
+				<!------ WHO ASIDE -> CONTENT ----------->
+				<article class="who-content bg-dark p-2">
+					<h2 class="display-2"><span class="primary-text">Meet</span> Our Team</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora culpa harum voluptas ratione enim consequuntur illo, atque, aut doloribus unde repellendus sit delectus beatae aspernatur placeat corrupti. Ipsa, itaque quas.</p>
+
+					<ul class="">
+						<li>Seven: CEO</li>
+						<li>Sarah Jamal: CFO</li>
+						<li>Malik Shabaz: Lead Accountant</li>
+						<li>Maryam Zain: Investment Manager</li>
+						<li>Asim Squeezy: Senior Accountant</li>
+					</ul>
+				</article>
+			</section>
+		</div>
+		<footer class="sticky-bottom">
+			<p>Ali Copyright &copy 2017</p>
+		</footer>
+
+		<script>
+			// Instance the tour
+			var tour = new Tour({
+				onShow: function (tour) {
+					document.getElementById('contain').style.opacity = 0.5;
+				},
+				onEnd: function (tour) {
+					document.getElementById('contain').style.opacity = 1;
+				},
+				steps: [
+					{
+						element: '#branding',
+						title: 'Title of my step',
+						content: 'Content of my step Content of my step Content of my step',
+					},
+					{
+						element: '.highlight',
+						title: 'Title of my step',
+						content: 'Content of my step',
+					},
+					{
+						element: '.current',
+						title: 'Title of my step ',
+						content: 'Content of my step',
+					},
+				],
+			});
+
+			// Initialize the tour
+			tour.init();
+
+			// Start the tour
+			tour.start();
+		</script>
+	</body>
+</html>
