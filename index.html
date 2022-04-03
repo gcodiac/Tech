@@ -109,39 +109,6 @@
 			<p>Ali Copyright &copy 2017</p>
 		</footer>
 
-		<script>
-			// Instance the tour
-			var tour = new Tour({
-				onShow: function (tour) {
-					document.getElementById('contain').style.opacity = 0.5;
-				},
-				onEnd: function (tour) {
-					document.getElementById('contain').style.opacity = 1;
-				},
-				steps: [
-					{
-						element: '#branding',
-						title: 'Title of my step',
-						content: 'Content of my step Content of my step Content of my step',
-					},
-					{
-						element: '.highlight',
-						title: 'Title of my step',
-						content: 'Content of my step',
-					},
-					{
-						element: '.current',
-						title: 'Title of my step ',
-						content: 'Content of my step',
-					},
-				],
-			});
-
-			// Initialize the tour
-			tour.init();
-
-			// Start the tour
-			tour.start();
-		</script>
+		
 	</body>
 </html>
