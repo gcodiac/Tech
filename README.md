@@ -22,6 +22,6 @@
 * [JavaScript](https://google.com/)
 
 ### Demo:
-[EverythingTech](https://gcodiac.github.io/tech/)
+[EverythingTech](https://gcodiac.github.io/Tech/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
